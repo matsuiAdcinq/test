@@ -1,0 +1,924 @@
+
+/* 基本
+**************************************************/
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 6.25%;
+}
+
+body {
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	color: #666;
+}
+
+img { vertical-align: bottom; }
+
+h1 {
+	font-size: 20rem;
+	font-weight: bold;
+	margin: 16px 0;
+	text-align: center;
+	border-bottom: 1px dashed #695a46;
+	border-bottom: 1px dashed rgba(105,90,70,1);
+	color: #695a46;
+}
+
+h2 {
+	font-size: 16rem;
+	font-weight: bold;
+}
+
+h1 span, h2 span, h3 span { display: none; }
+
+.alignleft {
+	width: 50%;
+	height: auto;
+	float: left;
+	margin: 0 16px 16px 0;
+}
+
+.alignright {
+	width: 50%;
+	height: auto;
+	float: right;
+	margin: 0 0 16px 16px;
+}
+
+.alignnone {
+	width: 100%;
+	height: auto;
+}
+
+/* レイアウト
+**************************************************/
+#sb-site {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 14rem;
+}
+
+#group-column { font-size: 14rem; }
+
+#current-column { font-size: 14rem; }
+
+.contents {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+}
+
+/* グループコンテンツ
+**************************************************/
+#group-contents { text-align: center; }
+
+#group-contents #logo {
+	width: 120px;
+	height: 120px;
+	margin: 8px auto;
+}
+
+#group-contents #logo img {
+	width: 100%;
+	height: auto;
+}
+
+#group-contents nav { margin: 16px 0; }
+
+#group-contents nav ul li a {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	border-left-style: solid;
+	border-left-width: 16px;
+	text-decoration: none;
+	font-size: 16rem;
+}
+
+#group-contents nav ul li.corp a {
+	border-left-color: rgba(0,91,172,1);
+	color: rgba(0,91,172,1);
+}
+
+#group-contents nav ul li.restaurant-bar a {
+	border-left-color: rgba(84,45,24,1);
+	color: rgba(84,45,24,1);
+}
+
+#group-contents nav ul li.hair a {
+	border-left-color: rgba(210,180,140,1);
+	color: rgba(210,180,140,1);
+}
+
+#group-contents nav ul li.clinic a {
+	border-left-color: rgba(11,174,230,1);
+	color: rgba(11,174,230,1);
+}
+
+#group-contents nav ul li.nail a {
+	border-left-color: rgba(255,174,224,1);
+	color: rgba(255,174,224,1);
+}
+
+#group-contents nav ul li.rental-space a {
+	border-left-color: rgba(34,34,34,1);
+	color: rgba(34,34,34,1);
+}
+
+#group-contents nav ul li.corp a:hover, #group-contents nav ul li.corp.current-menu a {
+	background-color: rgba(0,91,172,1);
+	color: #fff;
+}
+
+#group-contents nav ul li.restaurant-bar a:hover, #group-contents nav ul li.restaurant-bar.current-menu a {
+	background-color: rgba(84,45,24,1);
+	color: #fff;
+}
+
+#group-contents nav ul li.hair a:hover, #group-contents nav ul li.hair.current-menu a {
+	background-color: rgba(210,180,140,1);
+	color: #fff;
+}
+
+#group-contents nav ul li.clinic a:hover, #group-contents nav ul li.clinic.current-menu a {
+	background-color: rgba(11,174,230,1);
+	color: #fff;
+}
+
+#group-contents nav ul li.nail a:hover, #group-contents nav ul li.nail.current-menu a {
+	background-color: rgba(255,174,224,1);
+	color: #fff;
+}
+
+#group-contents nav ul li.rental-space a:hover, #group-contents nav ul li.rental-space.current-menu a {
+	background-color: rgba(34,34,34,1);
+	color: #fff;
+}
+
+#group-contents #copyright {
+	margin: 32px 0 16px 0;
+	text-align: center;
+	font-size: 12rem;
+	color: #005bac;
+}
+
+/* ヘッダー
+**************************************************/
+#mobile-header {
+	width: 100%;
+	height: 48px;
+	box-sizing: border-box;
+	background-color: rgba(210,180,140,1);
+	z-index: 9999;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+#mobile-header #logo {
+	width: 160px;
+	height: auto;
+	margin: 0 auto;
+	padding: 4px 0;
+}
+
+#mobile-header #logo img {
+	width: 100%;
+	height: auto;
+}
+
+#mobile-header .navbar-left {
+	position: fixed;
+	left: 0;
+	top: 10px;
+	width: 48px;
+	height: 48px;
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+#mobile-header .navbar-right {
+	position: fixed;
+	right: 0;
+	top: 10px;
+	width: 48px;
+	height: 48px;
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+/* ディスクリプション
+**************************************************/
+#description { padding: 8px; }
+
+#description h1 {
+	font-size: 14rem;
+	font-weight: normal;
+	margin: 0;
+	color: rgba(210,180,140,1);
+}
+
+/* スライダー
+**************************************************/
+#slider img { width: 100%; }
+
+/* グローバルナビ
+**************************************************/
+#current-column { background-color: rgba(210,180,140,1); }
+
+#global-nav { }
+
+#global-nav ul li { border-bottom: 1px solid rgba(255,255,255,0.5); }
+
+#global-nav ul li a {
+	height: 48px;
+	line-height: 48px;
+	font-size: 16rem;
+	display: block;
+	text-decoration: none;
+	padding: 0 16px;
+	color: #fff;
+}
+
+/* スライダー
+**************************************************/
+#slider { margin: 0; }
+
+/* フロントページ：ピックアップ
+**************************************************/
+#pickup-fp {
+	overflow: hidden;
+	margin: 8px 0;
+}
+
+#pickup-fp ul li {
+	display: block;
+	width: 50%;
+	height: auto;
+	float: left;
+	box-sizing: border-box;
+	padding: 8px;
+	list-style-type: none;
+}
+#pickup-fp ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px solid rgba(210,180,140,1);
+	text-decoration: none;
+	position: relative;
+}
+#pickup-fp ul li a img { width: 100%; }
+#pickup-fp ul li a span {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(210,180,140,1);
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 12rem;
+	padding: 4px;
+	color: #fff;
+}
+
+/* ディスクリプション
+**************************************************/
+#description { padding: 8px; }
+
+#description h1 {
+	font-size: 14rem;
+	font-weight: normal;
+	margin: 0;
+	color: rgba(210,180,140,1);
+}
+
+/* メニュー
+**************************************************/
+#menu-list .content { margin: 32px 0; }
+
+#menu-list .content h2 {
+	border-left: 16px solid rgba(210,180,140,1);
+	padding: 0 16px;
+	color: #d2b48c;
+	line-height: 48px;
+}
+
+#menu-list .content table {
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid rgba(210,180,140,1);
+}
+
+#menu-list .content table thead tr { background-color: rgba(210,180,140,0.5); }
+
+#menu-list .content table thead tr td {
+	text-align: center;
+	width: 120px;
+}
+
+#menu-list .content table th {
+	text-align: center;
+	padding: 8px 16px;
+	border-top: 1px solid rgba(210,180,140,1);
+}
+
+#menu-list .content table th span {
+	display: block;
+	font-size: 12rem;
+	margin: 8px 0 0 0;
+	background-color: rgba(210,180,140,0.2);
+	border-radius: 8px;
+	padding: 8px;
+}
+
+#menu-list .content table td {
+	text-align: center;
+	padding: 8px 16px;
+	white-space: nowrap;
+	border-top: 1px dashed #ccc;
+}
+
+#menu-list .content table td span {
+	display: block;
+	font-size: 12rem;
+}
+
+/* スタッフ
+**************************************************/
+#staff { }
+
+#staff-list {
+	overflow: hidden;
+}
+
+#staff-list .staff {
+	width: 100%;
+	min-height: 320px;
+	box-sizing: border-box;
+	padding: 8px;
+}
+
+#staff-list .staff .name {
+	background-color: rgba(210,180,140,1);
+	color: #fff;
+	font-size: 16rem;
+	padding: 8px;
+	text-align: center;
+}
+
+#staff-list .staff img {
+	width: 100%;
+	height: auto;
+}
+
+#staff-list .left-column {
+	width: 160px;
+	float: left;
+}
+
+#staff-list .right-column {
+}
+
+#staff-list #staff-photo { margin: 0 16px 0 0; }
+
+#staff-list #staff-photo img {
+	width: 100%;
+	height: auto;
+}
+
+#staff-list #staff-comment p { margin: 0 0 1em 0; }
+
+#staff-list #staff-information {
+	clear: both;
+	width: 100%;
+}
+
+#staff-list #staff-information table {
+	width: 100%;
+	margin: 16px 0;
+	border: 1px solid rgba(210,180,140,1);
+	font-size: 12rem;
+}
+
+#staff-list #staff-information table th {
+	width: 126px;
+	padding: 4px 8px;
+	white-space: nowrap;
+	text-align: left;
+	background-color: rgba(210,180,140,0.5);
+	border: 1px solid rgba(210,180,140,1);
+}
+
+#staff-list #staff-information table td {
+	padding: 4px 8px;
+	border: 1px solid rgba(210,180,140,1);
+}
+
+#staff-detail #other-staff-list .staff a:hover img { opacity: 0.8; }
+
+/* スタイルカタログ
+*************************************************
+#style-type-list { }
+
+#style-type-list .style-type {
+	width: 50%;
+	padding: 8px;
+	box-sizing: border-box;
+	float: left;
+}
+
+#style-type-list .style-type a {
+	width: 100%;
+	height: 48px;
+	display: table;
+	border: 1px solid rgba(210,180,140,1);
+	text-decoration: none;
+	background-color: #222;
+}
+
+#style-type-list .style-type a img { display: table-cell; }
+
+#style-type-list .style-type a h2 {
+	display: table-cell;
+	text-shadow: none;
+	background-color: rgba(210,180,140,1);
+	color: #fff;
+	padding: 8px;
+	line-height: 1;
+	vertical-align: middle;
+}
+
+#style-type-detail .style {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding: 8px;
+}
+
+#style-type-detail .style a {
+	display: block;
+	text-decoration: none;
+	background-color: #222;
+}
+
+#style-type-detail .style a img {
+	width: 100%;
+	height: auto;
+}
+
+#style-type-detail .style a:hover img { opacity: 0.8; }
+
+#style-type-detail .style a h2 {
+	text-shadow: none;
+	background-color: rgba(210,180,140,1);
+	color: #fff;
+	padding: 8px;
+	height: 48px;
+}*/
+
+#style-detail h2 {
+	text-shadow: none;
+	background-color: rgba(210,180,140,1);
+	color: #fff;
+	padding: 8px;
+	margin: 0 0 16px 0;
+}
+
+#style-detail .column-wrap { }
+
+#style-detail .left-column { }
+
+#style-detail .right-column { }
+
+#style-detail #style-photo {
+	width: 240px;
+	padding: 8px 0;
+	margin: 0 auto;
+}
+
+#style-detail #style-photo .image img {
+	width: 100%;
+	height: auto;
+}
+
+#style-detail #style-photo ul {
+	width: 100%;
+	display: table;
+	list-style: none;
+	margin: 8px 0;
+}
+
+#style-detail #style-photo ul li {
+	width: 33.3%;
+	display: table-cell;
+	cursor: pointer;
+}
+
+#style-detail #style-photo ul li img {
+	width: 100%;
+	height: auto;
+}
+
+#style-detail #style-information { }
+
+#style-detail #style-information .comment { margin: 0 0 16px 0; }
+
+#style-detail #style-information table {
+	width: 100%;
+	margin: 0 0 16px 0;
+}
+
+#style-detail #style-information table tr { border-bottom: 1px dotted rgba(201,204,184,1); }
+
+#style-detail #style-information table th {
+	padding: 4px 8px;
+	text-align: left;
+	width: 25%;
+}
+
+/* 店舗情報
+**************************************************/
+#store { }
+
+#store #store-information { }
+
+#store #store-information table { width: 100%; }
+
+#store #store-information table th {
+	padding: 8px;
+	vertical-align: top;
+	text-align: right;
+}
+
+#store #store-information table td {
+	padding: 8px;
+	vertical-align: top;
+}
+
+#store #acf-map {
+	width: 100%;
+	height: 320px;
+	box-sizing: border-box;
+	border: 1px solid rgba(210,180,140,1);
+	margin: 32px 0;
+}
+
+/* おすすめメニュー
+**************************************************/
+#recommend-list { }
+
+#recommend-list .list {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	float: left;
+}
+
+#recommend-list .list a {
+	display: block;
+	background-color: #222;
+}
+
+#recommend-list .list a img {
+	width: 100%;
+	height: auto;
+	transition: 0.2s;
+}
+
+#recommend-list .list a:hover img { opacity: 0.8; }
+
+#recommend-detail .left-column { }
+
+#recommend-detail .right-column { }
+
+#recommend-detail .content {
+	clear: both;
+	overflow: hidden;
+	margin: 16px 0;
+}
+
+#recommend-detail .content .title {
+	font-size: 16rem;
+	font-weight: bold;
+	line-height: 48px;
+	background-color: rgba(210,180,140,1);
+	color: #fff;
+	padding: 0 16px;
+}
+
+#recommend-detail .content ul { margin: 0 0 0 2em; }
+
+#recommend-detail .content img { width: 40%; }
+
+#recommend-detail .content div {
+	overflow: hidden;
+	padding: 16px;
+	border: 1px solid rgba(210,180,140,1);
+	box-sizing: border-box;
+}
+
+#recommend-detail #r21 .content, #recommend-detail #hahonico .content {
+	counter-increment: step;
+	position: relative;
+}
+
+#recommend-detail #r21 .content .title, #recommend-detail #hahonico .content .title { background-color: rgba(105,75,36,1); }
+
+#recommend-detail #r21 .content p, #recommend-detail #hahonico .content p { margin: 0 72px 0 0; }
+
+#recommend-detail #r21 .content .title:before, #recommend-detail #hahonico .content .title:before {
+	position: absolute;
+	right: 8px;
+	top: 40px;
+	content: "STEP";
+	background-color: #c8d147;
+	width: 64px;
+	height: 80px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 0 0 80px 80px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#recommend-detail #r21 .content .title:after, #recommend-detail #hahonico .content .title:after {
+	position: absolute;
+	right: 8px;
+	top: 40px;
+	content: counter(step);
+	width: 64px;
+	height: 80px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 32rem;
+}
+
+/* campaign
+**************************************************/
+#campaign { }
+
+#campaign .monthly-title {
+	font-size: 20rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+#campaign section {
+	width: 96%;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 16px 2%;
+	padding: 32px;
+	background-color: rgba(255,255,255,1.00);
+	background-image: url("../images/bg/campaign-bg-tl.png"), url("../images/bg/campaign-bg-tr.png"), url("../images/bg/campaign-bg-br.png"), url("../images/bg/campaign-bg-bl.png");
+	background-repeat: no-repeat;
+	background-position: left top, right top, right bottom, left bottom;
+	background-size: 120px;
+	box-shadow: inset 0 0 8px rgba(210,180,140,1);
+	border-radius: 8px;
+}
+
+#campaign section h2 {
+	font-size: 20rem;
+	margin: 0 0 16px 0;
+	border-bottom: 1px solid rgba(210,180,140,1);
+}
+
+#campaign section p { margin: 1em 0 0 0; }
+
+#campaign section h3 { font-size: 16rem; }
+
+#campaign section img { width: 100%; }
+
+/* ご予約
+**************************************************/
+#reservation { }
+
+#reservation .content {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+}
+
+#reservation .reservation-type {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 8px;
+	background: #f0e7da;
+	border: 1px solid #e1d5c7;
+	color: #603903;
+	text-align: center;
+}
+
+#reservation .reservation-type a {
+	text-decoration: none;
+	color: #a4722c;
+}
+
+#reservation .reservation-type h2 {
+	font-size: 24rem;
+	border-bottom: 1px solid #e1d5c7;
+	margin: 0 0 16px 0;
+}
+
+#reservation .reservation-type h3 {
+	font-size: 24rem;
+}
+/* News
+**************************************************/
+#news-fp {
+	width: 100%;
+	margin: 16px 0;
+	border: 2px solid rgba(210,180,140,1);
+	background-color: rgba(210,180,140,1);
+	border-radius: 4px;
+}
+#news-fp h2 {
+	color: #fff;
+	padding: 8px;
+	text-align: center;
+	vertical-align: middle;
+}
+#news-fp dl {
+	list-style: none;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 0 16px;
+}
+#news-fp dl dt {
+	clear: both;
+	float: left;
+	padding: 8px 0 0 0;
+	font-size: 12rem;
+}
+#news-fp dl dd .news-title {
+	font-weight: bold;
+	color: rgba(75,69,128,1);
+	margin: 0 8px 0 0;
+}
+#news-fp dl dd .news-title::before, #news-fp dl dd .news-title::after { content: "★"; }
+#news-fp dl dd {
+	padding: 8px 0 8px 96px;
+	border-top: 1px dashed rgba(148,137,255,1);
+}
+#news-fp dl dd:nth-of-type(1) { border: none; }
+/*
+p span img, #b2 #intro img { display: none; }
+#b2 #intro p { width: 100%; }*/
+.lef { float: left; }
+.cent {
+	display: block;
+	margin: 1% auto;
+}
+/* メインフッター
+**************************************************/
+#main-footer {
+	clear: both;
+	margin: 32px 0 0 0;
+	padding: 16px;
+	width: 100%;
+	background-color: rgba(210,180,140,0.4);
+	box-sizing: border-box;
+}
+#main-footer #footer-contact {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#main-footer #footer-contact .item {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+}
+#main-footer #footer-contact .contact {
+	border-radius: 8px;
+	padding: 16px;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: rgba(210,180,140,1);
+	border: 1px solid rgba(255,255,255,1);
+}
+#main-footer #footer-contact .title {
+	font-size: 18rem;
+	color: #fff;
+	border-bottom: 1px dotted rgba(255,255,255,1.00);
+}
+#main-footer #footer-contact .contact .tel {
+	font-size: 26rem;
+	color: #fff;
+}
+#main-footer #footer-contact .contact .tel i {
+	margin: 0 8px 0 0;
+}
+#main-footer #footer-contact .contact .open-close {
+	color: #fff;
+}
+#main-footer #footer-contact .contact .tel a:link,
+#main-footer #footer-contact .contact .tel a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+#main-footer #footer-contact .contact .link {
+	display: block;
+	margin: 16px 0;
+}
+#main-footer #footer-contact .contact .link img {
+	height: 64px;
+	width: auto;
+}
+/* デザイン
+**************************************************/
+#style-archive {
+	overflow: hidden;
+}
+#style-archive .style-nav {
+	clear: both;
+	position: relative;
+	margin: 8px 0;
+}
+#style-archive .style-nav h2 {
+	background-color: rgba(210,180,140,1);
+	color: #fff;
+	font-size: 16rem;
+	line-height: 32px;
+	padding: 0 16px;
+	cursor: pointer;
+	letter-spacing: 0.2em;
+}
+#style-archive .style-nav h2:after {
+	position: absolute;
+	top: 0;
+	right: 16px;
+	bottom: 0;
+	margin: 0 auto;
+	font-size: 24rem;
+	content: "\f055";
+	font-family: FontAwesome;
+	transition: 0.2s;
+}
+#style-archive .style-nav h2.open:after {
+	content: "\f056";
+}
+#style-archive .style-nav ul {
+	display: none;
+	overflow: hidden;
+	padding: 4px 0;
+}
+#style-archive #style-style.style-nav ul {
+	display: block;
+}
+#style-archive .style-nav ul li {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding: 4px;
+}
+#style-archive .style-nav ul li.current-cat a {
+	background-color: #fff;
+	color: rgba(210,180,140,1);
+}
+#style-archive .style-nav ul li a {
+	display: block;
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgba(210,180,140,0.8);
+	border: 1px solid rgba(210,180,140,1);
+	color: #fff;
+}
+#style-list {
+	overflow: hidden;
+	margin: 32px 0;
+}
+#style-list ul li {
+	width: 50%;
+	height: auto;
+	float: left;
+	list-style: none;
+	box-sizing: border-box;
+	padding: 4px;
+}
+#style-list ul li a {
+	width: 100%;
+	display: block;
+	border: 1px solid rgba(210,180,140,1);
+	color: #fff;
+	text-decoration: none;
+}
+#style-list ul li a img {
+	width: 100%;
+}
+#style-list ul li a p {
+	overflow: hidden;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+	font-size: 12rem;
+	line-height: 24px;
+	padding: 0 4px;
+	background-color: rgba(210,180,140,1);
+}
